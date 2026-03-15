@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Early Buddhism, Consciousness Experiments, and Health</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #7c3aed;
+      --accent-2: #0f766e;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8f5ef 0%, #f3f4f6 100%);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #faf5ff 0%, #ecfeff 100%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 900px;
+      margin: 0;
+    }
+
+    nav {
+      margin: 22px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: rgba(124, 58, 237, 0.08);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      border: 1px solid rgba(124, 58, 237, 0.15);
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #111827;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+      color: var(--accent-2);
+    }
+
+    p { margin: 0 0 16px; }
+
+    ul, ol {
+      margin: 0 0 18px 22px;
+      padding: 0;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+      margin: 28px 0;
+      border: 0;
+    }
+
+    .quote {
+      background: #fafaf9;
+      border-left: 5px solid var(--accent);
+      padding: 18px 18px 18px 20px;
+      border-radius: 14px;
+      margin: 18px 0 22px;
+      white-space: pre-line;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #fcfcfd;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: rgba(124, 58, 237, 0.09);
+      border: 1px solid rgba(124, 58, 237, 0.18);
+      padding: 5px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2563eb;
+      word-break: break-word;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 8px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: #f9fafb;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+      padding-top: 8px;
+    }
+
+    @media (max-width: 700px) {
+      section, header { padding: 22px 18px; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      td {
+        padding: 10px 0;
+        border-bottom: none;
+      }
+      tr {
+        border-bottom: 1px solid var(--border);
+        padding: 10px 0;
+      }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧭 Early Buddhism, Consciousness Experiments, and Health</h1>
+      <p class="lead">
+        A complete HTML page with text on early Buddhism vs. Theravāda, cosmology,
+        planes of existence, Plato and the Buddha, a PEAR Lab-inspired consciousness experiment,
+        retrocausality, spirituality, and concluding reflections on diet and exercise.
+      </p>
+      <nav>
+        <a href="#buddhism">Buddhism</a>
+        <a href="#cosmology">Cosmology</a>
+        <a href="#plato">Plato and the Buddha</a>
+        <a href="#spiritual">Spiritual perspective</a>
+        <a href="#experiment">The experiment</a>
+        <a href="#retrocausality">Retrocausality</a>
+        <a href="#health">Health</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <section id="buddhism">
+      <h2>🧭 Early Buddhism vs. Theravāda – and what the Buddha “really” said</h2>
+      <p>
+        It may be important to distinguish between early Buddhism and the Theravāda tradition,
+        which is often regarded as the most original school.
+      </p>
+      <p>
+        Some things were probably changed after the Buddha said them – even in the earliest texts.
+        Later additions may therefore come from people who were less enlightened than the Buddha.
+        At the same time, the Buddha’s enlightenment was not necessarily of the kind where he “always knew everything.”
+      </p>
+      <p>
+        According to his own statements, the Buddha had to direct his attention toward what he wanted to know;
+        he was therefore not enlightened in the sense of constantly knowing everything.
+      </p>
+      <p>
+        Together with ChatGPT I have tried to get closer to what the Buddha really said –
+        and to the probability that he had genuine visions of the cosmos,
+        some aspects of which science only discovered 2,500 years later.
+      </p>
+
+      <hr class="divider" />
+
+      <h3>🎥 3 related videos (Chris Langan / CTMU)</h3>
+      <ul>
+        <li><a href="https://youtu.be/15lMOY3tL5g" target="_blank" rel="noopener">Chris Langan - What is Nirvana? - CTMU</a></li>
+        <li><a href="https://www.youtube.com/watch?v=1-nOZPvbSEk" target="_blank" rel="noopener">[Preview] Chris Langan - Global Utility - CTMU</a></li>
+        <li><a href="https://www.youtube.com/watch?v=pTIv4GiDGOk" target="_blank" rel="noopener">Chris Langan - Spacetime in the CTMU</a></li>
+      </ul>
+
+      <h3>📚 Scholars: the Buddha probably used a simpler cosmology</h3>
+      <p>The Buddha probably said only a few things about cosmology, according to scholars such as:</p>
+      <ul>
+        <li>Richard Gombrich (Oxford)</li>
+        <li>Steven Collins (Chicago)</li>
+        <li>Lambert Schmithausen (Hamburg)</li>
+        <li>Rupert Gethin (Bristol)</li>
+        <li>Bhikkhu Analayo (Lumbini &amp; Hamburg)</li>
+      </ul>
+      <p>
+        They argue that the Buddha originally used a simple cosmology,
+        and that the large cosmic systems in the canon were elaborated later.
+      </p>
+      <p>Arguments:</p>
+      <ul>
+        <li>the earliest texts are more grounded and less systematized</li>
+        <li>one world (the one we live in)</li>
+        <li>known rivers such as the Ganges and Yamunā</li>
+        <li>lakes from North Indian mythology</li>
+        <li>and one world mountain: Sineru</li>
+        <li>the cosmology in the canon is inconsistent and layered</li>
+        <li>large measurements and multiverse structures are probably later expansions</li>
+        <li>the Buddha avoids speculative cosmology (e.g. MN 63)</li>
+      </ul>
+
+      <h3>🌞🌌 The few cosmological statements – and why the parallel is remarkable</h3>
+      <p>
+        Yet the few cosmological things the Buddha did say resemble the Sun’s phase as a red giant
+        that engulfs the Earth, and also Big Bounce cosmology.
+      </p>
+      <p>
+        Several scholars have pointed out that it is statistically surprising
+        that precisely the few probably original cosmological statements
+        lie so close to modern models, when the Buddha barely spoke about cosmology at all.
+      </p>
+      <p>
+        If the Buddha merely used random ancient imagery,
+        why do precisely these few statements resemble modern astrophysics so much —
+        while almost no other ancient cosmologies do?
+      </p>
+      <ul>
+        <li>Because the Buddha said so little about cosmology, the parallel becomes remarkable and difficult to explain as mere coincidence.</li>
+      </ul>
+
+      <h3>🔥 Excerpt from “Buddha's Discourse on the End of the World” / “The Sermon of the Seven Suns” (AN 7.62)</h3>
+      <p>Source: <a href="https://obo.genaud.net/dhamma-vinaya/misc/an/07_sevens/an07.062.edmn.misc.htm" target="_blank" rel="noopener">obo.genaud.net</a></p>
+      <div class="quote">“After a very long time, a seventh sun appears. And then, monks, this great earth and Sineru, king of mountains, will blaze, flame up, and become one mass of fire.
+As the earth and the mountains burn and are consumed, a spark carried by the wind is borne all the way up to the worlds of the gods. The peaks of Mount Sineru, burning, engulfed, and destroyed, collapse as one immense mass of fire and crumble over hundreds — indeed, five hundred — yojanas.
+And when this great earth and Sineru, king of mountains, are completely consumed and burned up, neither ash nor soot will remain. Just as when clarified butter or oil burns completely, monks, and leaves behind neither soot nor ash, so it is with the great earth and Mount Sineru.”</div>
+
+      <h3>🟢 Sineru in the very earliest Buddhism</h3>
+      <p>
+        In the earliest Buddhism, Sineru was understood as a really existing cosmic structure
+        that arranged and connected planes of existence vertically – not merely as a symbol.
+      </p>
+
+      <h3>🌍 Cosmic world axes in antiquity – ranked by humanism</h3>
+      <p>
+        In many ancient cultures there is the idea of a cosmic structure (axis mundi)
+        that connects planes of existence vertically – heaven, the human world, and the underworld.
+      </p>
+      <p>
+        But although these structures resemble each other to a surprising degree,
+        the traditions differ greatly in how humanistic they are:
+        whether they place human suffering, dignity, and the possibility of liberation at the center,
+        or whether cosmology is instead used to legitimize fate, hierarchy, and power.
+      </p>
+      <p>The most important traditions can therefore be ranked by degree of humanism.</p>
+
+      <div class="grid">
+        <div class="card"><div class="badge">🥇 Very high</div><h3>Early Buddhism – Sineru / Meru</h3><ul><li>No creator god</li><li>No eternal soul</li><li>No absolute hierarchy</li><li>All beings can attain liberation</li><li>Even god realms are impermanent</li></ul><p>This is the most consistently humanistic cosmology in antiquity.</p></div>
+        <div class="card"><div class="badge">🥈 High</div><h3>Early Jesus tradition – “many dwellings”</h3><ul><li>No fully developed world axis, but a clear sense of many levels of existence</li><li>“In my Father’s house are many dwellings”</li><li>The kingdom of God as an inner reality</li><li>Universal access</li></ul><p>Strongly humanistic at its core, though later narrowed by church dogma.</p></div>
+        <div class="card"><div class="badge">🥉 Medium-high</div><h3>Daoist tradition – Mount Kunlun</h3><ul><li>No creator god</li><li>No punitive theology</li><li>Harmony and non-violence at the center</li></ul><p>More individual than universal in focus.</p></div>
+        <div class="card"><div class="badge">⚖️ Medium</div><h3>Shamanic traditions</h3><ul><li>Healing and balance at the center</li><li>No absolute god</li><li>Direct experience</li></ul><p>Often tribe-specific and lacking a universal ethic.</p></div>
+        <div class="card"><div class="badge">🏔️ Low-medium</div><h3>Classical Hindu tradition – Mount Meru</h3><ul><li>Caste hierarchy is cosmically legitimized</li><li>Social inequality is explained karmically</li><li>Liberation is often reserved for elites</li></ul><p>Spiritually deep, but socially problematic.</p></div>
+        <div class="card"><div class="badge">🌳 Low</div><h3>Norse tradition – Yggdrasil</h3><ul><li>Fate is unavoidable</li><li>No universal exit from suffering</li><li>Heroism matters more than compassion</li></ul><p>The cosmology accepts suffering rather than abolishing it.</p></div>
+        <div class="card"><div class="badge">🧱 Very low</div><h3>Mesopotamian tradition – Ziggurats</h3><ul><li>Cosmology legitimizes royal power</li><li>Humans are servants</li><li>Suffering = fate</li></ul></div>
+        <div class="card"><div class="badge">🔥 Very low</div><h3>Iranian / Zoroastrian tradition – Hara Berezaiti</h3><ul><li>Cosmic war between good and evil</li><li>Humans are pieces in a metaphysical battle</li><li>No universal exit</li></ul></div>
+        <div class="card"><div class="badge">🏛️ Very low</div><h3>Greek tradition – Olympus / Omphalos</h3><ul><li>Gods above humans</li><li>Fate rules everything</li><li>No universal way of salvation</li><li>Hierarchy is cosmically legitimized</li></ul><p>Yet Greek philosophy later transcends this mythology and becomes one of the great cradles of humanism.</p></div>
+      </div>
+
+      <h3>👉 Main point</h3>
+      <p>The most humanistic traditions arise either:</p>
+      <ul>
+        <li>where cosmology is dismantled (Greece)</li>
+        <li>or where cosmology is subordinated to the ending of suffering (Buddhism)</li>
+      </ul>
+      <p>
+        The less cosmology is used to legitimize power and hierarchy,
+        the more it is used to relieve suffering and open a universal path to liberation.
+      </p>
+      <p>
+        Early Buddhism stands almost alone in antiquity
+        in having a fully developed cosmology without a creator god,
+        without hierarchy, and with a universal exit from the entire cycle.
+      </p>
+    </section>
+
+    <section id="plato">
+      <h2>🌌 Plato and the Buddha – two nearly contemporary paths to liberation</h2>
+      <p>
+        Around 400 BCE, two of the greatest thinkers in world history appear almost simultaneously:
+      </p>
+      <ul>
+        <li>the Buddha in India</li>
+        <li>Plato in Greece</li>
+      </ul>
+      <p>
+        They knew nothing of each other,
+        yet independently developed some of the most profound theories of:
+        suffering, knowledge, soul / consciousness, liberation, and cosmic order.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="badge">🧘 Buddha</div>
+          <h3>Liberation from the whole cosmos</h3>
+          <ul>
+            <li>All conditioned existence is suffering (dukkha)</li>
+            <li>All is impermanent (anicca)</li>
+            <li>No eternal soul (anattā)</li>
+            <li>No creator god</li>
+            <li>All beings can attain liberation</li>
+          </ul>
+          <p>Nibbāna is not a heaven, but the cessation of craving, rebirth, and cosmic bondage.</p>
+        </div>
+        <div class="card">
+          <div class="badge">🧠 Plato</div>
+          <h3>The ascent of the soul through knowledge</h3>
+          <ul>
+            <li>The sensory world is changeable and imperfect</li>
+            <li>The world of Forms is eternal, true, and good</li>
+            <li>The soul is immortal</li>
+            <li>Liberation happens through knowledge</li>
+            <li>The philosopher can become free already in this life</li>
+          </ul>
+          <p>Plato offers an elitist, knowledge-based ascent within the cosmos.</p>
+        </div>
+      </div>
+
+      <h3>🌟 The deepest similarities</h3>
+      <ul>
+        <li>The sensory world is not ultimate reality</li>
+        <li>Ignorance binds human beings</li>
+        <li>Knowledge is liberating</li>
+        <li>A higher level of consciousness is possible</li>
+        <li>An ethical life is necessary for knowledge</li>
+      </ul>
+
+      <h3>⚠️ The decisive differences</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>🧘 Buddha</h3>
+          <ul>
+            <li>No soul</li>
+            <li>No eternal identity</li>
+            <li>No cosmic reward</li>
+            <li>Exit from the whole cosmos</li>
+            <li>Liberation open to all</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🧠 Plato</h3>
+          <ul>
+            <li>Eternal soul</li>
+            <li>Individual identity remains</li>
+            <li>Abiding in the world of Forms</li>
+            <li>The cosmos remains</li>
+            <li>Liberation especially for philosophers</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>🧭 Summary</h3>
+      <table>
+        <thead>
+          <tr><th>Point</th><th>Buddha</th><th>Plato</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Point">Creator god</td><td data-label="Buddha">❌ No</td><td data-label="Plato">❌ No</td></tr>
+          <tr><td data-label="Point">Soul</td><td data-label="Buddha">❌ No eternal soul</td><td data-label="Plato">✅ Immortal soul</td></tr>
+          <tr><td data-label="Point">Cosmos</td><td data-label="Buddha">Impermanent</td><td data-label="Plato">Eternal hierarchy</td></tr>
+          <tr><td data-label="Point">Liberation</td><td data-label="Buddha">Out of the whole cosmos</td><td data-label="Plato">Up into the world of Forms</td></tr>
+          <tr><td data-label="Point">Access</td><td data-label="Buddha">All beings</td><td data-label="Plato">Mostly philosophers</td></tr>
+          <tr><td data-label="Point">Humanism</td><td data-label="Buddha">⭐⭐⭐⭐⭐</td><td data-label="Plato">⭐⭐⭐⭐</td></tr>
+        </tbody>
+      </table>
+
+      <h3>🔑 Final point</h3>
+      <p>
+        It is almost astonishing that two thinkers,
+        at opposite ends of the world, without contact, and at roughly the same time,
+        both arrived at the idea that human beings can be liberated through insight,
+        that the sensory world is not ultimate reality,
+        and that ethics and insight are inseparably connected.
+      </p>
+      <p>
+        But where Plato still preserves the soul, hierarchy, and cosmos,
+        the Buddha goes one step further:
+        he dissolves the very soul, transcends the whole cosmos,
+        and offers a universal exit from all existence.
+      </p>
+    </section>
+
+    <section id="cosmology">
+      <h2>🌌 Cosmology, planes of existence, and world cycles</h2>
+
+      <h3>🧘‍♂️ Sineru, planes of existence, and “transport” (cuti–paṭisandhi)</h3>
+      <p>
+        In early Buddhism it is described that the Buddha and certain monks
+        could move between planes of existence,
+        not as physical travel in space,
+        but through states of consciousness attained in deep meditation.
+      </p>
+      <p>
+        The enormous measurements, ring mountains, and layered structures
+        came only in later cosmological systems.
+      </p>
+      <div class="quote">👉 “In the oldest layers, Sineru is used to show that even the cosmic center of a world system will one day perish – not because the whole universe ceases, but because all conditioned worlds are subject to impermanence.”</div>
+
+      <h3>🌌 Cosmic worlds and “transport” between planes of existence in Buddhism</h3>
+      <p>
+        One may perhaps infer from early Buddhism
+        that the heavenly planes belonging to this world system
+        will be destroyed when the Sun in the distant future engulfs the Earth
+        and this entire cosmic system dissolves.
+      </p>
+      <p>
+        At the same time, Buddhism teaches that there are countless other world systems
+        with their own planes of existence
+        that are not dissolving at the same time.
+      </p>
+      <p>The question then is how beings are “transported” to these other worlds.</p>
+      <p>
+        According to the oldest Buddhist texts, no physical journey through space and time takes place.
+        The transition happens through rebirth via consciousness and karma.
+      </p>
+      <ul>
+        <li>When a being dies (cuti), a new consciousness (paṭisandhi) immediately arises in another plane of existence, determined by the state of mind and previous actions.</li>
+        <li>No intermediate journey and no movement through space are described – only an instantaneous continuity of consciousness, like one flame lighting a new flame.</li>
+        <li>Thus beings leave this world system long before its physical dissolution, and are reborn elsewhere in accordance with their karma.</li>
+      </ul>
+
+      <h3>🧠 Consciousness and the brain as a possible “antenna” (hypothesis)</h3>
+      <p>
+        I also think it cannot be ruled out
+        that there are other real planes of existence,
+        and that the brain may in some sense function like an antenna
+        receiving information from them.
+      </p>
+      <p>
+        Perhaps this takes place through very small quantum events
+        in strong field intensities over extremely short distances,
+        which are found throughout the brain.
+        If so, consciousness is not only something created locally in neurons,
+        but also something that can, to a limited degree,
+        receive information from a larger cosmic or non-local level.
+      </p>
+      <p>
+        One possible motivation for this idea
+        is that both animals and humans solve complex open-ended problems every day
+        that no one has yet taught artificial intelligence to solve in the same way without such an “antenna.”
+      </p>
+      <p>Examples include:</p>
+      <ul>
+        <li>driving a car safely from A to B in unpredictable traffic situations</li>
+        <li>using hands and arms to fold clothes neatly</li>
+        <li>grasping objects with precise force and timing</li>
+        <li>navigating intuitively in complex environments</li>
+      </ul>
+      <p>These tasks require:</p>
+      <ul>
+        <li>continuous sensing</li>
+        <li>rapid holistic understanding</li>
+        <li>bodily coordination</li>
+        <li>flexible problem-solving</li>
+      </ul>
+      <p>
+        It is therefore tempting to speculate
+        that consciousness is not exclusively a closed system in the brain,
+        but may also have access to a broader field of information
+        not yet fully understood by neuroscience or artificial intelligence.
+      </p>
+
+      <h3>🌌 Big Bounce cosmology and MN 4 (Bhayabherava Sutta)</h3>
+      <p>Source: <a href="https://suttacentral.net/mn4/en/bodhi?lang=en&reference=none&highlight=false" target="_blank" rel="noopener">suttacentral.net</a></p>
+      <div class="quote">“When my concentrated mind was thus purified, bright, unblemished, rid of defilement, pliant, workable, steady, and attained to imperturbability, I directed it to the knowledge of recollecting past lives. I recollected my many past lives … many aeons of world-contraction, many aeons of world-expansion, many aeons of these two motions following one another in immeasurably long cosmic cycles …
+… With the divine eye … I saw beings passing away and reappearing … and I understood how beings move on according to their actions …
+… I directly knew … ‘This is suffering.’ … ‘This is the path leading to the cessation of suffering.’ …
+… ‘Birth is ended, the holy life fulfilled, what had to be done has been done, there is no more return to any form of becoming.’ …
+… It is because I see two benefits that I still seek secluded resting places … I see a pleasant abiding for myself here and now, and I have compassion for future generations.”</div>
+
+      <h3>🟢 The earliest ideas of planes of existence in Buddhism</h3>
+      <p>
+        According to modern scholars, the early Buddha taught
+        that consciousness can be reborn in many different forms of existence –
+        humans, animals, god realms, and realms of suffering.
+        These worlds were regarded as real, but not eternal.
+        No god judges – karma and the direction of the mind determine rebirth.
+      </p>
+      <p>
+        Even the highest god realms are impermanent.
+        Therefore the Buddha pointed to one exit lying beyond all worlds: Nibbāna.
+      </p>
+
+      <h3>🔹 TEXTUAL CLARIFICATION – why beings have already been reborn before Sineru burns up 🔹</h3>
+      <ul>
+        <li>In the very earliest Buddhist texts (the Nikāya canon), world-dissolution (saṃvaṭṭa) is described as a slow cosmic process, not as a sudden catastrophe.</li>
+      </ul>
+      <p><strong>🔥 What is described – and what is not?</strong></p>
+      <p><strong>📜 Aṅguttara Nikāya 7.62 – Sattasūriya Sutta (The Seven Suns)</strong></p>
+      <p>It says:</p>
+      <div class="quote">“Ayaṃ mahāpathavī ca Sineru ca pabbatarājā ādittā bhavissanti, sampajjalitā, ekā jalitā bhavissanti.”</div>
+      <ul>
+        <li>“This great earth and Sineru, king of mountains, will be ignited, blaze up, and become one burning mass.” 🔥</li>
+      </ul>
+      <p>And further:</p>
+      <div class="quote">“Seyyathāpi sappi vā telaṃ vā anupādisesaṃ pariyādāya jhāyeyya…”</div>
+      <ul>
+        <li>“Like clarified butter or oil burning completely without ash or soot.”</li>
+      </ul>
+      <p><strong>➡️ Crucial observation:</strong></p>
+      <ul>
+        <li>❌ Nothing is said about sattā (beings) dying</li>
+        <li>❌ pāṇa (living creatures) perishing</li>
+        <li>❌ maraṇa (death) of humans, animals, or gods</li>
+      </ul>
+      <p>
+        📌 In Pāli texts, the death of beings is explicitly mentioned whenever it is relevant.
+        👉 That it is not mentioned here is therefore meaningful.
+      </p>
+      <p><strong>🧠 The text-based conclusion</strong></p>
+      <ul>
+        <li>When sattā (beings) are not mentioned while the entire physical structure is destroyed,</li>
+        <li>this means, according to close textual reading and modern scholarship:</li>
+        <li>➡️ there are already no beings left in this world system.</li>
+      </ul>
+      <p>That is to say:</p>
+      <ul>
+        <li>punabbhava (rebirth) has already ceased locally</li>
+        <li>beings have already died in their former lives</li>
+        <li>and have been reborn elsewhere according to kamma (karma)</li>
+      </ul>
+
+      <h3>🔄 World-dissolution as process – not total annihilation</h3>
+      <p><strong>📜 Dīgha Nikāya 1 – Brahmajāla Sutta</strong></p>
+      <div class="quote">“Saṃvaṭṭati loko, vivaṭṭati loko.”</div>
+      <ul>
+        <li>“The world contracts, the world expands.”</li>
+        <li>➡️ No element mechanics are mentioned</li>
+        <li>➡️ No total annihilation of all life</li>
+        <li>➡️ Only gradual cessation of conditions</li>
+      </ul>
+
+      <h3>🌌 Other worlds exist at the same time</h3>
+      <p><strong>📜 Majjhima Nikāya 49 – Brahma-nimantanika Sutta</strong></p>
+      <div class="quote">“Atthi kho, brahme, añño loko.”</div>
+      <ul>
+        <li>“There are other worlds, Brahmā.”</li>
+        <li>When one cakkavāḷa (world system) ceases, others still exist.</li>
+        <li>Beings are reborn there – not through physical movement, but through karmic rebirth (cuti–paṭisandhi).</li>
+      </ul>
+
+      <h3>🔄 Cosmic cycles without the cessation of life</h3>
+      <p><strong>📜 Majjhima Nikāya 4 – Bhayabherava Sutta</strong></p>
+      <div class="quote">“Anekepi saṃvaṭṭavivaṭṭakappe anussarāmi.”</div>
+      <ul>
+        <li>“I recollect many aeons of world-contraction and expansion.”</li>
+        <li>Beings are reborn across these cycles</li>
+        <li>No cosmic pause is described in which all life ceases</li>
+      </ul>
+
+      <h3>🔥 Only fire in the earliest Buddhism</h3>
+      <ul>
+        <li>In the Nikāya texts only fire-destruction (tejo-saṃvaṭṭa) appears</li>
+        <li>❌ No udaka-saṃvaṭṭa (water)</li>
+        <li>❌ No vāta-saṃvaṭṭa (wind)</li>
+        <li>➡️ Water and wind appear only in later Abhidhamma and commentarial traditions.</li>
+      </ul>
+
+      <h3>✨ In short</h3>
+      <ul>
+        <li>The fact that the death of beings is not mentioned means they have already been reborn elsewhere (punabbhava)</li>
+        <li>Sineru burns only afterward 🔥</li>
+        <li>Life has already left the system 🌌</li>
+      </ul>
+      <p>
+        This is directly text-based, Pāli-documented,
+        and in accordance with modern scholarship on the very earliest Buddhism.
+      </p>
+
+      <h3>🌍 World destructions in the oldest Buddhist texts – and modern cosmology</h3>
+      <p>According to the earliest Buddhist scriptures (the Pāli canon), worlds perish in vast cycles of contraction (samvatta).</p>
+      <ul>
+        <li>Oldest and most original mention: destruction by fire.</li>
+        <li>Later expansions (still early, but not original): destruction by water and wind.</li>
+        <li>The heavens above the affected level always survive.</li>
+      </ul>
+      <p>According to the cosmic teaching (AN 7.62 and other texts):</p>
+      <ul>
+        <li>Fire → the world perishes up to the Ābhassara heaven.</li>
+      </ul>
+
+      <h3>☀️ The Seven Suns (Sattasūriya Sutta, AN 7.62)</h3>
+      <ul>
+        <li>Small streams dry up.</li>
+        <li>Larger rivers dry up.</li>
+        <li>Lakes dry up.</li>
+        <li>Even the Ganges dries up.</li>
+        <li>The oceans evaporate.</li>
+        <li>The Earth begins to glow and smoke.</li>
+        <li>The Earth and Sineru burst into flames and are consumed without remainder.</li>
+      </ul>
+      <p>
+        The sutta describes only the dissolution of the physical world in this one world system.
+        No death of beings is mentioned,
+        which in the early Buddhist context means that beings have already been reborn elsewhere according to their karma.
+      </p>
+      <p>
+        This can be understood figuratively:
+        not literally seven suns, but the Sun swelling up –
+        fully in line with modern astronomy concerning the Sun’s development into a red giant.
+      </p>
+
+      <h3>🌍 Cosmological background + Mahākappa (4 phases)</h3>
+      <p>The universe undergoes cycles of:</p>
+      <ul>
+        <li>Expansion / unfolding (vivatta)</li>
+        <li>Endurance</li>
+        <li>Contraction / destruction (samvatta)</li>
+        <li>An empty period before a new unfolding</li>
+      </ul>
+      <p>There are:</p>
+      <ul>
+        <li>thousandfold world systems</li>
+        <li>thousand-times-thousandfold world systems</li>
+        <li>and “great thousandfold world systems”</li>
+      </ul>
+      <p>A full cycle is called a mahākappa.</p>
+      <p>
+        The Buddha said: if one had a mountain 14 km high and stroked it with a silk cloth once every 100 years,
+        the mountain would wear away faster than a mahākappa would pass.
+      </p>
+
+      <h3>🌌 1. What is a mahākappa?</h3>
+      <p>In early Buddhism, a mahākappa (great aeon) is the longest conceivable cosmic unit of time.</p>
+      <p>It consists of four immense periods, which together make up one full cosmic cycle:</p>
+      <ul>
+        <li>samvaṭṭa – world dissolution (contraction / destruction)</li>
+        <li>samvaṭṭa-ṭṭhāyin – the empty interval after dissolution</li>
+        <li>vivaṭṭa – world re-emergence / unfolding (expansion)</li>
+        <li>vivaṭṭa-ṭṭhāyin – the stable phase in which the world endures</li>
+      </ul>
+      <p>So: 👉 A mahākappa = dissolution → emptiness → new unfolding → stable existence</p>
+
+      <h3>🧭 2. Is this only one universe or many?</h3>
+      <p>Very important:</p>
+      <ul>
+        <li>A mahākappa applies to one world system (one cakkavāḷa).</li>
+        <li>But there are countless world systems that are not necessarily in the same phase at the same time.</li>
+      </ul>
+      <p>So: 👉 When one world is dissolving, others are in a stable phase, and others are in a new unfolding. It is a genuine multiverse system.</p>
+
+      <h3>🔥 3. World-dissolution is not a single event</h3>
+      <p>In the texts, samvaṭṭa (dissolution) is described as:</p>
+      <ul>
+        <li>extremely slow</li>
+        <li>stepwise</li>
+        <li>taking place over inconceivably long periods</li>
+      </ul>
+      <p>And in later tradition it can happen in three ways:</p>
+      <ul>
+        <li>by fire (tejo-saṃvaṭṭa)</li>
+        <li>by water (udaka-saṃvaṭṭa)</li>
+        <li>by wind (vāta-saṃvaṭṭa)</li>
+      </ul>
+      <p>But in the oldest layers only fire is mentioned. Dissolution is therefore not one catastrophe, but a long cosmic process.</p>
+
+      <h3>🌌 4. Relation to Big Bounce cosmology</h3>
+      <p>Big Bounce models typically have:</p>
+      <ul>
+        <li>expansion</li>
+        <li>contraction</li>
+        <li>bounce</li>
+        <li>new expansion</li>
+      </ul>
+      <p>But Buddhism has a richer structure:</p>
+      <ol>
+        <li>stable world (vivaṭṭa-ṭṭhāyin)</li>
+        <li>dissolution (samvaṭṭa)</li>
+        <li>empty phase without a world (samvaṭṭa-ṭṭhāyin)</li>
+        <li>new unfolding (vivaṭṭa)</li>
+      </ol>
+      <p>
+        So: 👉 Not merely a bounce, but also a long “cosmic emptiness” between universes.
+        This resembles modern ideas such as:
+        “ekpyrotic phase,” “pre-big-bang vacuum,” and “quantum vacuum state.”
+      </p>
+
+      <h3>🧠 5. The Buddha says directly that he experienced many mahākappas</h3>
+      <p>In MN 4 and MN 36, for example, the Buddha says:</p>
+      <div class="quote">“I recollected many aeons of world-contraction, many aeons of world-expansion, many aeons of both movements …”</div>
+      <p>
+        He is not merely saying “many lives,” but many cosmic cycles.
+        Thus: 👉 Saṃsāra stretches across countless universes through many mahākappas.
+      </p>
+
+      <h3>🧪 Modern simulations: inflation vs. contraction</h3>
+      <p>Scientific simulations show:</p>
+      <ul>
+        <li>Inflation often creates inhomogeneous universes.</li>
+        <li>Contraction (cosmic shrinkage) makes the universe more homogeneous, flat, and isotropic.</li>
+      </ul>
+      <p>
+        This harmonizes surprisingly well with the Buddhist teaching
+        that after contraction, universes unfold from a subtle, harmonious state.
+      </p>
+
+      <h3>👼 Life in the heavens + the “fall” into a new world (vivatta)</h3>
+      <p><strong>👼 Life in the heavens is far better than life on Earth</strong></p>
+      <p>The higher heavens (Ābhassara, Subhakiṇṇa, Vehapphala, and the arūpa worlds) are described as places with:</p>
+      <ul>
+        <li>no illness</li>
+        <li>no hunger</li>
+        <li>subtle or immaterial bodies</li>
+        <li>jhāna-bliss</li>
+        <li>enormously long lifespans</li>
+        <li>no conflicts</li>
+        <li>great degrees of peace, light, and clarity</li>
+      </ul>
+      <p>The Buddha says that even the highest earthly happiness cannot compare.</p>
+      <p><strong>🔥 The fate of beings during the fire-destruction in cosmic contraction</strong></p>
+      <ul>
+        <li>Humans, animals, hell beings, and lower gods perish with their realm.</li>
+        <li>Beings up to Ābhassara may rise to higher heavens or be reborn later.</li>
+        <li>The highest heavens (above Vehapphala, including the arūpa worlds) always survive.</li>
+        <li>Since there are countless world systems, beings can be reborn in other universes that are not dissolving.</li>
+      </ul>
+      <p><strong>🌱 The beginning of a new world (vivatta) – the “fall”</strong></p>
+      <ul>
+        <li>The luminous Ābhassara devas come first.</li>
+        <li>They are self-luminous, without sex, without gross bodies, without need for food.</li>
+        <li>Some taste the Earth’s nutriment → lose their light → their bodies become heavier.</li>
+        <li>Differences arise → pride, jealousy, conflict.</li>
+      </ul>
+      <p>This is the “fall” described in the Aggañña Sutta.</p>
+
+      <h3>✨ The unborn + the luminous nature of mind + continuity without a soul (anattā)</h3>
+      <p><strong>✨ The unborn and the luminous nature of mind</strong></p>
+      <ul>
+        <li>“There is the unborn, the unconditioned …” (Udāna 8.3)</li>
+        <li>“This consciousness is luminous, but defiled by adventitious impurities.” (AN 1.49–52)</li>
+      </ul>
+      <p>Nibbāna does not perish. The nature of mind is luminous even when universes perish.</p>
+      <p><strong>🔥 Continuity without a soul (anattā)</strong></p>
+      <ul>
+        <li>No eternal soul — but karmic continuity</li>
+        <li>like one flame lighting another flame</li>
+        <li>like waves arising and dying while the depth of the ocean remains</li>
+      </ul>
+
+      <h3>🧘 Conclusion</h3>
+      <p>Everything conditioned falls:</p>
+      <ul>
+        <li>worlds</li>
+        <li>heavens</li>
+        <li>gods</li>
+        <li>beings</li>
+      </ul>
+      <p>Both Buddhism and modern cosmology describe cycles of:</p>
+      <ul>
+        <li>expansion</li>
+        <li>endurance</li>
+        <li>contraction</li>
+        <li>new unfolding</li>
+      </ul>
+      <p>
+        Modern physics suggests that contraction makes the universe homogeneous —
+        almost like Buddhism’s doctrine of samvatta.
+        The Earth will burn when the Sun becomes a red giant.
+      </p>
+      <p>
+        But because there is the unconditioned,
+        and because mind is luminous,
+        beings can realize that which never perishes
+        and become liberated from the very cycle of the arising and passing away of worlds.
+      </p>
+    </section>
+
+    <section id="spiritual">
+      <h2>🌀 Spiritual perspective</h2>
+      <p>
+        In all that concerns the spiritual,
+        it may be worth remembering that even the wisest ape
+        cannot learn to walk into a supermarket and buy, for example, a watermelon.
+      </p>
+      <p>
+        If one imagines a line of development from ape to human being –
+        and then continuing further in a kind of multidimensional direction –
+        one may perhaps think that there exist beings
+        that truly do exist and operate on a level
+        that human beings cannot really grasp or learn to understand.
+      </p>
+      <p>
+        In that connection one may also imagine
+        that heaven is not merely an image or an idea,
+        but a genuinely existing dimension of reality.
+        Perhaps it is only there that the human being can fully come to understand
+        such higher forms of existence.
+      </p>
+    </section>
+
+    <section id="experiment">
+      <h2>🔹 The purpose of an experiment 🔹</h2>
+      <p>
+        I am conducting this experiment in order to challenge a view
+        that I experience as both reductionistic and ultimately destructive:
+        the idea that the human being is nothing but its physical brain.
+      </p>
+      <p>If this view were fully adequate, then:</p>
+      <ul>
+        <li>conscious intention should not be able to influence physical randomness</li>
+        <li>human will should be entirely derived from deterministic or random processes</li>
+        <li>subjective experience should be a mere by-product without causal power</li>
+      </ul>
+      <p>
+        My experiment is therefore an attempt to investigate
+        whether consciousness may have an independent, measurable influence on physical processes —
+        even when these are based on electronic noise and quantum fluctuations.
+      </p>
+      <p>
+        It is not about “proving” anything definitively,
+        but about testing whether reality behaves less mechanically
+        than a purely materialist worldview assumes.
+      </p>
+
+      <h3>A PEAR Lab-inspired experiment on mind, randomness, and physical noise</h3>
+      <p>
+        Inspired by the pioneering experiments at the PEAR laboratory at Princeton University,
+        and related research,
+        this project investigates a fundamental question:
+        Can human consciousness influence physical systems in a measurable way?
+      </p>
+      <p>
+        To investigate this,
+        I have built a hardware-based noise generator
+        that exploits physical random processes.
+        The system is designed and assembled on a custom-made circuit board
+        and placed in a housing.
+        It continuously generates physical noise,
+        which is processed and analyzed in real time.
+      </p>
+      <p>
+        On the software side,
+        I have developed custom tools in Python
+        for data acquisition, live visualization, and statistical analysis.
+        The aim is to test whether focused human intention
+        can lead to deviations from randomness
+        that exceed what one would statistically expect from chance alone.
+      </p>
+      <p>
+        The project does not presuppose any particular outcome.
+        Instead, standardized statistical methods, controlled measurements,
+        and transparent data logging are used
+        to investigate whether reproducible and statistically significant effects can be observed.
+      </p>
+      <p>
+        What you see here is the current status of the experiment —
+        hardware, software, live data, and ongoing development.
+      </p>
+      <p><strong>A PEAR Lab–Inspired Experiment on Mind, Randomness, and Physical Noise</strong><br>
+        <a href="https://youtu.be/Y2lPJYhIZ8Y" target="_blank" rel="noopener">https://youtu.be/Y2lPJYhIZ8Y</a>
+      </p>
+      <p><strong>You can download the program files here:</strong><br>
+        <a href="https://1drv.ms/f/c/7ab6e14a904d8bd2/IgC8jZq8wPpuSo0fRYw9Hs1CASwuN_kC6Ux-13H3W7pacP0?e=rf7ziW" target="_blank" rel="noopener">OneDrive folder with files</a>
+      </p>
+
+      <p>
+        It is difficult to imagine how one could influence quantum events in an electronic circuit
+        when one does not know what is happening moment by moment
+        in voltages and currents.
+        But who knows what a presence one may have on other planes of existence can do —
+        or what others there, hypothetically, may be able to do.
+      </p>
+      <p>
+        Perhaps we already steer quantum processes in the brain every day
+        when we make decisions, solve open-ended problems,
+        and do things that AI still cannot do —
+        for example, driving a car safely from A to B.
+      </p>
+      <p>
+        To obtain faster and statistically stronger measurements,
+        one could perhaps use many independent zener-noise generators
+        and analyze their combined output.
+        But it takes time to build that many circuits,
+        especially when one also has a physically demanding full-time job.
+      </p>
+      <p>
+        Perhaps it makes the most sense simply to continue with the setup I already have
+        and try to capture something resembling what the PEAR Lab at Princeton said they observed.
+        It just takes longer to gather enough data.
+      </p>
+      <p>
+        What I experienced actually resembles something the PEAR Lab also noticed.
+      </p>
+
+      <h3>⭐ What PEAR Lab found in their 30-year noise experiments</h3>
+      <p>
+        Princeton Engineering Anomalies Research (PEAR)
+        conducted experiments for nearly three decades
+        in which ordinary people tried to influence random noise generators
+        by intention alone.
+      </p>
+      <p>
+        The most striking thing was that the noise generators responded —
+        but not always in the way the subject intended.
+      </p>
+
+      <h3>Intention reversal</h3>
+      <p>In many tests, something strange happened:</p>
+      <ul>
+        <li>When the operator tried to make the curve go up, it sometimes went down</li>
+        <li>When the person tried to make it go down, it went up</li>
+        <li>The effect did not look like simple noise – there were patterns, directions, and relationships</li>
+      </ul>
+      <p>
+        The researchers gave it a name:
+        <strong>intention reversal</strong> –
+        a phenomenon in which the system responds,
+        but in the opposite direction to conscious intention.
+      </p>
+
+      <h3>The effect was weak, but statistically strong</h3>
+      <p>
+        A single session rarely showed anything dramatic.
+        But when thousands of sessions were combined,
+        the deviation was consistent and statistically so strong
+        that the probability of it being due to chance
+        was calculated to be less than one in trillions.
+      </p>
+
+      <h3>Not pure noise – but a pattern</h3>
+      <p>PEAR found effects such as:</p>
+      <ul>
+        <li>Autocorrelations in the noise</li>
+        <li>Deviations that did not follow the normal distribution</li>
+        <li>Correlations between the operator’s mental state and the results</li>
+        <li>Experimenter effects (the person who set up the experiment influenced the result)</li>
+      </ul>
+      <p>It behaved too “systematically” for pure chance to explain it.</p>
+
+      <h3>Personal signatures</h3>
+      <ul>
+        <li>Some people always pulled the curve slightly upward</li>
+        <li>Some always a little downward</li>
+        <li>And some had a stable tendency toward intention reversal</li>
+      </ul>
+      <p>It was as if each person had a kind of “psychic signature” in the noise.</p>
+
+      <h3>Distance and time made no difference</h3>
+      <ul>
+        <li>The operator was in another building</li>
+        <li>In another state</li>
+        <li>On the other side of the USA</li>
+        <li>Or even in experiments where the intention was given after the data had already been generated (retro-experiments)</li>
+      </ul>
+
+      <h3>No simple physical explanation</h3>
+      <p>
+        Experimental setups were run in Faraday cages,
+        electromagnetically shielded,
+        tested against control sessions,
+        and used with different kinds of noise generators –
+        but nothing technical could explain the patterns.
+      </p>
+      <p>PEAR’s cautious conclusion was:</p>
+      <div class="quote">• There exists a form of systematic connection between human intention and physical randomness that cannot easily be explained on the basis of current physics or psychology.</div>
+      <p>
+        What I myself observed in my measurement resembles somewhat what PEAR Lab found:
+        a kind of response – but not necessarily in the direction one consciously tries to produce.
+      </p>
+      <p>And that makes it quite fascinating to investigate further.</p>
+    </section>
+
+    <section id="retrocausality">
+      <h2>🔹 Can the present change the past – without us noticing it?</h2>
+      <p>
+        Some of the most controversial results from PEAR Lab at Princeton
+        pointed toward what is called retrocausality:
+        that intention in the present can influence the statistics of data
+        that were already generated in the past.
+      </p>
+      <p>
+        It sounds like science fiction,
+        but in several of their so-called retro-PK experiments
+        precisely such effects appeared:
+      </p>
+      <div class="quote">👉 The statistical distribution of earlier bits changed slightly, but consistently.</div>
+      <p>
+        If the past can really be influenced,
+        should we not then experience time paradoxes?
+      </p>
+      <p>For example:</p>
+      <ul>
+        <li>1 bit in the past → triggers a lightning strike</li>
+        <li>0 bit → no lightning strike</li>
+      </ul>
+      <p>
+        A lightning strike can change the weather → people’s behavior → who meets whom → who is born → DNA → the whole future
+        — a classic butterfly effect.
+      </p>
+      <p>And yet we never experience our own present being “rewritten.” Why?</p>
+
+      <h3>⭐ Three of the most common interpretations</h3>
+      <div class="grid">
+        <div class="card">
+          <div class="badge">✔ 1</div>
+          <h3>Self-consistency (the Novikov principle)</h3>
+          <p>
+            The most widespread interpretation is that the universe
+            only allows retrocausal effects that do not create logical paradoxes.
+            If a change in the past would lead to an inconsistent present,
+            then the change does not occur,
+            or its consequences are neutralized,
+            or the effect remains statistically microscopic.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">✔ 2</div>
+          <h3>Many-Worlds / time branches</h3>
+          <p>
+            In Everett’s Many-Worlds interpretation,
+            every quantum possibility creates a new branch of reality.
+            If a retrocausal effect would lead to a paradox in one timeline,
+            the change is realized in another branch,
+            while the original branch remains unchanged.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">✔ 3</div>
+          <h3>No actual change of the past</h3>
+          <p>
+            A more conservative interpretation is that no concrete past events are changed;
+            only weak correlations, probability shifts,
+            and non-local relations arise without information paradoxes.
+          </p>
+        </div>
+      </div>
+
+      <h3>⭐ Short conclusion</h3>
+      <p>PEAR Lab’s data can be interpreted as signs that:</p>
+      <ul>
+        <li>present and past are not completely independent</li>
+        <li>but that the connection is strongly constrained</li>
+      </ul>
+      <p>Whatever interpretation one prefers, the following remains true:</p>
+      <ul>
+        <li>✔ The effects are small</li>
+        <li>✔ No macroscopic paradoxes arise</li>
+        <li>✔ Experienced reality remains consistent</li>
+      </ul>
+      <p>
+        The past may possibly be influenced statistically,
+        but never in ways that break the coherent reality we experience.
+      </p>
+
+      <h3>🔹 My own preliminary interpretation</h3>
+      <p>
+        Personally I lean most toward interpretation 3 —
+        namely that no concrete rewriting of the past occurs,
+        but rather time-symmetric statistical shifts
+        in which present and past enter into one unified quantum description.
+      </p>
+      <p>However, with one possible extension:</p>
+      <div class="quote">👉 That in certain free-choice events, a limited number of temporary time branches may arise, diverge briefly, and then merge again when the consequences remain within a self-consistent frame.</div>
+      <p>In this model:</p>
+      <ul>
+        <li>Free choices open a small outcome space</li>
+        <li>Several quantum possibilities may be temporarily realized</li>
+        <li>The branches do not exist permanently as in classical Many-Worlds</li>
+        <li>Only the developments that are mutually consistent survive and “recombine”</li>
+      </ul>
+      <p>This avoids both:</p>
+      <ul>
+        <li>classical time paradoxes</li>
+        <li>infinitely branching worlds</li>
+        <li>and the need for macroscopic rewriting of history</li>
+      </ul>
+      <p>
+        At the same time, it preserves the possibility
+        that consciousness and intention play an active role
+        in which outcomes are stabilized.
+      </p>
+      <p>This approach lies somewhere between:</p>
+      <ul>
+        <li>Aharonov’s time-symmetric quantum mechanics</li>
+        <li>Cramer’s transactional interpretation</li>
+        <li>and a strongly limited, recombining variant of Many-Worlds</li>
+      </ul>
+      <p>
+        At the same time, it is worth noting
+        that all of these well-known interpretations are probably incomplete,
+        since they describe only phenomena within the observable physical plane
+        and do not take into account
+        whatever may be occurring in other layers or planes of existence of reality, if such exist.
+      </p>
+      <p>
+        Taken together, this model seems to me
+        to fit both PEAR Lab’s observations
+        and the complete absence of experienced time paradoxes in everyday life.
+      </p>
+    </section>
+
+    <section id="health">
+      <h2>🥗 Health, diet, and exercise</h2>
+      <p>
+        Finally, a little about health, which is also very important.
+        For example, I believe that many ancient philosophers did not eat much meat.
+      </p>
+      <p>
+        One can get an idea of which animal protein sources are the most unhealthy,
+        and which foods are the healthiest,
+        from the images that have also been shared.
+      </p>
+      <p><strong>There is more about this study here:</strong></p>
+      <p><a href="https://www.youtube.com/watch?v=LPXWCIFDkgM" target="_blank" rel="noopener">Harvard says Red Meat is WORSE than Junk Food</a></p>
+      <p>
+        In this video it is also said
+        that fatty fish may be the healthiest food containing animal protein,
+        and that a diet with a little fatty fish and other animal products,
+        but not much,
+        may be slightly healthier than a completely unprocessed vegan diet with B12 supplementation.
+        But can all the vegans in the studies really have remembered that necessary B12 supplement?
+      </p>
+      <p>Harvard recommends that one should not eat more than an average of 14 grams of red meat per day.</p>
+
+      <h3>🏃 Exercise is also very important</h3>
+      <p><a href="https://www.youtube.com/watch?v=hshBTJaFqNY" target="_blank" rel="noopener">Is Exercise a Magic Bullet for Longevity? | Daniel Lieberman</a></p>
+      <p>
+        In the so-called Blue Zones, where people live the longest in the world,
+        people also do not eat very much meat of any kind.
+        They eat mainly unprocessed plant-based food,
+        and get much of their protein from plants.
+      </p>
+      <p><a href="https://www.bluezones.com/recipes/food-guidelines/" target="_blank" rel="noopener">Blue Zones – Food Guidelines</a></p>
+    </section>
+
+    <section id="sources">
+      <h2>📚 Sources</h2>
+      <ul>
+        <li>Sattasūriya Sutta – AN 7.62 (in some editions AN 7.66)</li>
+        <li>Aṅguttara Nikāya, Dīgha Nikāya</li>
+        <li>The teaching of samvatta and vivatta</li>
+        <li>MN 36 – Mahāsaccaka Sutta</li>
+        <li>MN 4 – Bhayabherava Sutta</li>
+        <li>AN 1.49–52 (the luminous nature of mind)</li>
+        <li>Modern Big-Bounce research (Steinhardt, Ijjas et al.)</li>
+        <li><a href="https://obo.genaud.net/dhamma-vinaya/misc/an/07_sevens/an07.062.edmn.misc.htm" target="_blank" rel="noopener">Buddha's Discourse on the End of the World</a></li>
+        <li><a href="https://suttacentral.net/mn4/en/bodhi?lang=en&reference=none&highlight=false" target="_blank" rel="noopener">MN 4 – Bhayabherava Sutta</a></li>
+        <li><a href="https://vincentius.dk/Thomas-evangeliet.pdf" target="_blank" rel="noopener">Gospel of Thomas (PDF link on site)</a></li>
+        <li><a href="https://youtu.be/Y2lPJYhIZ8Y" target="_blank" rel="noopener">A PEAR Lab–Inspired Experiment on Mind, Randomness, and Physical Noise</a></li>
+        <li><a href="https://www.youtube.com/watch?v=LPXWCIFDkgM" target="_blank" rel="noopener">Harvard says Red Meat is WORSE than Junk Food</a></li>
+        <li><a href="https://www.youtube.com/watch?v=hshBTJaFqNY" target="_blank" rel="noopener">Is Exercise a Magic Bullet for Longevity? | Daniel Lieberman</a></li>
+        <li><a href="https://www.bluezones.com/recipes/food-guidelines/" target="_blank" rel="noopener">Blue Zones – Food Guidelines</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      HTML document created with structure, headings, links, and a readable layout.
+    </footer>
+  </div>
+</body>
+</html>
